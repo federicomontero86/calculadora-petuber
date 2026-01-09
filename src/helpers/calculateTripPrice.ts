@@ -9,10 +9,10 @@ export function calculateTripPrice({
   minutes,
   hour,
 }: QuotationParams): number {
-  const FLAG_DROP = 75;
-  const MINIMUM_FARE = 150;
-  const PRICE_PER_KM = 25;
-  const PRICE_PER_MIN = 5;
+  const FLAG_DROP = 86.25;
+  const MINIMUM_FARE = 172.5;
+  const PRICE_PER_KM = 28.75;
+  const PRICE_PER_MIN = 5.75;
 
   const subtotal =
     FLAG_DROP + Math.ceil(km * PRICE_PER_KM) + minutes * PRICE_PER_MIN;
